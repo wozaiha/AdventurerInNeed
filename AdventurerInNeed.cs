@@ -66,7 +66,7 @@ namespace AdventurerInNeed {
 
             PluginConfig.Webhooks.RemoveAll(string.IsNullOrEmpty);
 
-            var cfPreferredRolePtr = SigScanner.ScanText("E8 ?? ?? ?? ?? 48 8D 4B 6C");
+            var cfPreferredRolePtr = SigScanner.ScanText("E8 ?? ?? ?? ?? 48 8D 4E 6C");
 
             if (cfPreferredRolePtr == IntPtr.Zero) {
                 PluginLog.LogError("Failed to hook the cfPreferredRoleChange method.");
